@@ -38,4 +38,21 @@ console.log("Le livre le plus emprunté est : " + booksSorted[lastBook].title);
 console.log("Le livre le moins emprunté est : " + booksSorted[0].title);
 
 // -----------------------------------------------------------------------------
-console.log("Quel est le livre le plus emprunté ?")
+console.log("Quel est le livre avec l'id 873495 ?");
+let found = books.find(book => book.id == 873495);
+console.log(" -> " + found.title + " est le livre avec l'id " + found.id);
+
+// -----------------------------------------------------------------------------
+let copyBooks = books;
+delete copyBooks[copyBooks.findIndex(book => book.id == 133712)];
+console.log(copyBooks)
+
+
+// -----------------------------------------------------------------------------
+console.log("Trie les livres par ordre alphabétique");
+let booksTitle = new Array
+copyBooks.forEach(book => {
+  booksTitle.push(book.title)
+});
+booksTitle.sort();
+console.log(booksTitle);
