@@ -1,3 +1,4 @@
+function books(){
 const books = [
   { title: 'Gatsby le magnifique', id: 133712, rented: 39 },
   { title: 'A la recherche du temps,perdu', id: 237634, rented: 28 },
@@ -56,3 +57,4 @@ copyBooks.forEach(book => {
 });
 booksTitle.sort();
 console.log(booksTitle);
+}
