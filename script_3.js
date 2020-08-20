@@ -1,6 +1,6 @@
 ///pyramide mario
 function pyramid(){
-  let number = prompt("Choisissez un nombre:");
+  let number = prompt("Choisi un nombre :");
   let hashtag = "#";
   let space = " ";
   let counter = 1;

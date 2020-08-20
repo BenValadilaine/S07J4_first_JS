@@ -26,6 +26,3 @@ function adn(x){
   });
   console.log("Résultat : " + adnT);
 };
-
-adn(adn1Cut);
-adn(adn2Cut);
